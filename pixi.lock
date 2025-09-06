@@ -8,6 +8,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/biopython-1.85-py313hcdf3177_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-h99b78c6_7.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2025.8.3-hbd8a1cb_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/freesasa-2.2.1-hd8ed1ab_5.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/freesasa-python-2.2.1-py313hcdf3177_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/icu-75.1-hfee45f7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libblas-3.9.0-34_h10e41b3_openblas.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libcblas-3.9.0-34_hb3479ef_openblas.conda
@@ -61,6 +63,27 @@ packages:
   license: ISC
   size: 154402
   timestamp: 1754210968730
+- conda: https://conda.anaconda.org/conda-forge/noarch/freesasa-2.2.1-hd8ed1ab_5.conda
+  sha256: ac83d523dde3ae3aaccd36488dd092ac331b91138b0a9977def9100ae3cdd293
+  md5: 2d93ef3ecf39a1bdabd813c96d205a3b
+  depends:
+  - freesasa-python >=2.2.1,<2.2.2.0a0
+  license: MIT
+  license_family: MIT
+  size: 7137
+  timestamp: 1756396943890
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/freesasa-python-2.2.1-py313hcdf3177_1.conda
+  sha256: 9d986b08b620b9d43afddcdc6107545a0a97e9e1cbcb9a8090236d55c39dc2e8
+  md5: a511d3ff4ee214835efe869f502ed55a
+  depends:
+  - __osx >=11.0
+  - python >=3.13,<3.14.0a0
+  - python >=3.13,<3.14.0a0 *_cp313
+  - python_abi 3.13.* *_cp313
+  license: MIT
+  license_family: MIT
+  size: 219607
+  timestamp: 1756397114450
 - conda: https://conda.anaconda.org/conda-forge/osx-arm64/icu-75.1-hfee45f7_0.conda
   sha256: 9ba12c93406f3df5ab0a43db8a4b4ef67a5871dfd401010fbe29b218b2cbe620
   md5: 5eb22c1d7b3fc4abb50d92d621583137
