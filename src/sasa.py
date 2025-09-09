@@ -8,13 +8,14 @@ The bar plot is saved as a PNG file in the './results' directory.
 ---------------------------------------------------------------------
 Usage:
 
-In a terminal, run the following command:
+In a terminal, move to the `MANTEL_code/src` directory and run the 
+following command:
 
     python sasa.py <pdb_file>
 
 Example:
 
-    python sasa.py 1AKI.pdb
+    python sasa.py ../data/1AKI.pdb
 ---------------------------------------------------------------------
 """
 
@@ -325,7 +326,8 @@ def display_results(structure, pdb_file):
                 dpi=600,
                 bbox_inches='tight')
     plt.close()
-    print(f"     RSA Figure saved at ../results/{basename}_rsa.png\n")
+    print(f"     RSA Figure saved at ../results/{basename}_rsa.png")
+    print("\n###  Computation run successfully !  ###\n")
 
 
 def main():
