@@ -46,11 +46,11 @@ MANTEL_code/
 ```
 
 ---
-### Script Usage
+### Requirements
 
 
 ---
-### Requirements
+### Script Usage
 
 
 ---
