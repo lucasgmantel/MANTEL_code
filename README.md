@@ -25,7 +25,8 @@ The working directory is organized as followed :
 ```bash
 MANTEL_code/
 │
-├── 
+├── .gitattributes           # Ensures consistent handling of line endings across different operating systems
+├── .gitignore               # Specifies files and directories to be ignored by Git
 ├── data/                    # PDB files of the example structures
 │   ├── 1AKI.pdb                 # 1AKI (lysozyme)
 │   ├── 1BTA.pdb                 # 1BTA (barstar)
