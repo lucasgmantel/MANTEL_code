@@ -215,7 +215,6 @@ def calculate_sasa(all_atoms, sphere_points, vdw_radii):
         if element not in vdw_radii:
             continue  # Ignore atoms without defined radius.
         # Generate the sphere for the current atom.
-        R = vdw_radii[element] + 1.4
         sphere = generate_atom_sphere(coord, vdw_radii[element], sphere_points)
         atom_spheres[atom] = sphere  # Store current atom's sphere.
     # Calculate exposed points for each atom
