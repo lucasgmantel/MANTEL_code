@@ -313,6 +313,7 @@ def display_results(structure, pdb_file):
     # Adding labels and title.
     ax.set_ylabel('Relative Solvent Accessibility (%)')
     ax.set_xlabel('Residues')
+    ax.set_ylim(0, 100)
     ax.set_xticks(x)
     ax.set_xticklabels(residues_labels, rotation=90, fontsize=7)
     plt.margins(x=0.01)
